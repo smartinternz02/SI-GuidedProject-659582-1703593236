@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link
+      rel="stylesheet"
+      href= "{{url_for('static', filename='css/stylesheet.css')}}"/> 
+
+	<title>  DIYA RIDE SHARING </title>
+</head>
+<style>
+
+.button {
+  background-color:#008CBA;
+font-size: 12px;
+  padding: 15px 32px;
+border-radius: 12px;
+ display: inline-block;
+}
+	
+.p{text-align: Justify;
+      font-size: 14;
+      font-style:Times New Roman ;
+}
+a {
+   color: Black;
+   text-align: center;
+   font-size: 16px;
+}
+
+
+
+</style>
+<body style = "background-color: pink;">
+<form >
+<div> 
+<img src="/static/taxiapp.jpg"  style="float:left;" width="100" height="100" >
+<h1 align = "center" style="color: Green;" > DIYA RIDE SHARING</h1>
+</div>
+	
+	<h1 align = "center" style ="color:green;"><p>Right Choice for the Travellers.</p></h1>
+<p><h2 align="center" style="color:Green;">Travellers can use Diya Ride Sharing to book your cab and enjoy your travel with in the State.</h2></p>
+<br>
+<p style="color: blue;">Transport is a key contributor to carbon dioxide (CO2) emissions in India. It is 14% of energy-related direct CO2 emissions and one of the fastest growing emissions sectors in the country, along with industry.Within the transport sector, road transport is responsible for 90% of total energy consumption.</p>
+
+<p style="color: blue;">India’s motor vehicle fleet has grown rapidly in recent years, and before the COVID-19 pandemic, the on-road vehicle stock was expected to almost double to over 200 million by 2030. Nationally Determined Contribution (NDC) under the Paris Agreement, India has committed to reduce the emissions intensity of its gross domestic product (GDP) by 33% to 35% below 2005 levels by 2030 (Climate Action Tracker, 2020). While the government has accordingly defined economy-wide emissions reduction targets, thus far there are not any sector-specific targets for high-emitting sectors like industry and transport.</p>
+
+<p style="color: blue;">Diya Ride Sharing Support the government policy by sharing the vehicle from one point to another within the state</p>
+<br>
+<br>
+
+<div align = "center" >
+<a href ="/login" ><button class = "button">Login</a></button>
+<a href ="/newuser" ><button class = "button">Newuser</a></button>
+<a href = "/co2test"><button class = "button">Co2 Emission</a></button>
+</div>
+</form>
+</body>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "eeda699e-872d-4dc1-8ff8-63a69f7ccb02", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "6c186676-4c7d-4cf8-be28-9925f47bc511", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+         
+</script>
+
+</html>

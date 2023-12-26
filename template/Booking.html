@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Your Ride</title>
+</head>
+<style >
+	body {
+  background-color: pink;
+}
+.header {
+  background-color: rgba(255, 0, 0, 0.3);
+  padding: 10px;
+  text-align: center;
+  text-decoration-color: ;
+  font-size: 16px;
+}
+.button {
+  background-color:#008CBA;
+font-size: 12px;
+  padding: 15px 32px;
+border-radius: 12px;
+ display: inline-block;
+}
+p{text-align: center;
+ font-size: 14;
+font-style: italic;
+}
+</style>
+
+<body>
+<form action= "book", method="post">
+<!--<form action = "book" method = "post" >-->
+<header class="header"><h1> DIYA RIDE SHARING</h1></header>
+<h1  align = "center" style= "background-color:DodgerBlue;"><p>Right Choice for the Travellers </p></h1>
+<div align="center">
+<h3>Book Your Ride {{result}} </h3>
+<br>
+<br>
+	Enter Pick up Location :<input type="text" name= "pickup"  placeholde = "Enter pickup location">
+	<br><br>
+	
+	<LABEL>Enter Drop Location : <input type="text" name="drop"  placeholder= "Enter drop location"></LABEL>
+	<br><br>
+	<label for="cars">Choose a car:</label>
+
+<select id="cars">
+  <option value="Auto" >Auto</option>
+  <option value="Indica">Indica</option>
+  <option value="Sedan" >Sedan</option>
+  <option value="Tavera">Tavera</option>
+</select>
+<br>
+<br>
+<br>
+	
+    Confirm Your Ride : <a href = "/book"> <button class = "button"/>Yes</button></a>
+    <a href = "/cancel"> <button class = "button">No</button></a>
+
+
+</div>
+</form>
+</body>
+</html>

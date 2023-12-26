@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<style>
+.button {
+		background-color: #555555;
+		font-size: 12px;
+		padding: 10px 24px;
+		border-radius: 12px;
+	}
+
+	body {
+  background-color: pink;
+ }
+.header {
+  background-color: rgba(255, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  text-decoration-color: ;
+  font-size: 16px;
+}
+
+	p{text-align: center;
+ font-size: 14;
+font-style: italic;
+}
+</style>
+<body>
+<form action = "submit", method ="post">
+<header class="header"><h1> DIYA RIDE SHARING</h1></header>
+  <h1 style="background-color:DodgerBlue;"><p>Right Choice for the Travellers </p></h1>
+    <h3>{{pred}}</h3>
+    <div align="center">
+	<h3 >Login Form</h3>
+	<LABEL>Email ID</LABEL>
+	<input align="center" type="email" name="email" required="" placeholder= "enter email">
+	<br>
+	<br>
+<LABEL>Password</LABEL>
+	<input align="center" type="password" name="password" required="" placeholder= "enter Password">
+	<br>
+	<br>
+
+<a href ="/submit"><button class="button">Submit</button>
+<br><br><br>
+<a href = "/newuser"> New User </a>
+
+</div>
+	
+</form>	
+</body>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "eeda699e-872d-4dc1-8ff8-63a69f7ccb02", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "6c186676-4c7d-4cf8-be28-9925f47bc511", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+ 
+</script>
+</html>

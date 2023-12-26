@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+</head>
+<style >
+	body {
+  background-color: pink;
+  background-image: url("paper.gif");
+}
+.header {
+  background-color: rgba(255, 0, 0, 0.3);
+  padding: 10px;
+  text-align: center;
+  text-decoration-color: ;
+  font-size: 16px;
+}
+p{text-align: center;
+ font-size: 14;
+font-style: italic;
+}
+</style>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "eeda699e-872d-4dc1-8ff8-63a69f7ccb02", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "6c186676-4c7d-4cf8-be28-9925f47bc511", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+<body>
+<form action = "newsubmit", method = "post" >
+<header class="header"><h1> DIYA RIDE SHARING</h1></header>
+<h1  align = "center" style= "background-color:DodgerBlue;"><p>Right Choice for the Travellers </p></h1>
+<div align="center">
+<h3>New Registration </h3>
+	<LABEL>First Name : <input type="text" name="Fname" required="" placeholder= "Enter Your First Name"></LABEL>
+	<br><br>
+	
+	<LABEL>Last Name : <input type="text" name="Lname" required="" placeholder= "Enter Your Last Name"></LABEL>
+	
+	<br><br>
+	
+<LABEL>Designation : <input type="text" name="Designation" required="" placeholder= "Enter Your Designation"></LABEL>
+		<br><br>
+	
+	<LABEL>Organisation : <input type="text" name="Organisation" required="" placeholder= "Enter Your Organisation"></LABEL>
+	
+	<br><br>
+	
+	<LABEL>    Email     : <input type="Email" name="email" required="" placeholder= "Enter Your valid email"></LABEL>
+	
+	<br><br>
+	
+<LABEL>Phone            : <input type="text" name="phone" required="" placeholder= "Enter Your Phone Number"></LABEL>
+	
+	<br><br>
+	
+<LABEL>Password         : </LABEL>
+    	<input type="password" name="password" required="" placeholder= "Enter password">
+    	<br><br>
+    	
+	<a href  = "/newsubmit"><button class = "button">Submit</button>
+	</div>
+</form>
+</body>
+
+</html>
